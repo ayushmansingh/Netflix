@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 1. Loading / intro screen -->
+  <section id="screen-loading" class="screen active">
+    <div class="netflix-logo-wrap">
+      <div class="netflix-logo">N</div>
+    </div>
+    <button id="play-intro" class="intro-btn">Tap to start</button>
+  </section>
+
+  <!-- 2. Who's watching -->
+  <section id="screen-profiles" class="screen">
+    <h1 class="profiles-title">Who's watching?</h1>
+    <div class="profiles" id="profiles"></div>
+  </section>
+
+  <!-- 3. PIN entry -->
+  <section id="screen-pin" class="screen">
+    <div class="pin-wrap">
+      <img class="pin-avatar" id="pin-avatar" alt="" />
+      <h2 class="pin-title">Enter your PIN to access this profile.</h2>
+      <div class="pin-inputs" id="pin-inputs">
+        <input type="tel" maxlength="1" inputmode="numeric" />
+        <input type="tel" maxlength="1" inputmode="numeric" />
+        <input type="tel" maxlength="1" inputmode="numeric" />
+        <input type="tel" maxlength="1" inputmode="numeric" />
+      </div>
+      <p class="pin-error" id="pin-error">Whoops, wrong PIN. Try again.</p>
+    </div>
+  </section>
+
+  <!-- 4. Home page -->
+  <section id="screen-home" class="screen">
+    <header class="nav">
+      <div class="nav-left">
+        <div class="netflix-logo small">N</div>
+        <ul class="nav-links">
+          <li class="active">Home</li>
+          <li>Our Story</li>
+          <li>Memories</li>
+          <li>My List</li>
+          <li>Browse by Date</li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <span class="nav-icon">🔍</span>
+        <span class="nav-icon">🔔</span>
+        <img class="nav-avatar" id="nav-avatar" alt="" />
+      </div>
+    </header>
+
+    <div class="hero" id="hero">
+      <div class="hero-overlay">
+        <h1 class="hero-title" id="hero-title"></h1>
+        <p class="hero-meta" id="hero-meta"></p>
+        <p class="hero-desc" id="hero-desc"></p>
+        <div class="hero-buttons">
+          <button class="btn-play">▶ Play</button>
+          <button class="btn-info">ⓘ More Info</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="rows" id="rows"></div>
+  </section>
+
+  <!-- Modal for "More Info" / item detail -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-media" id="modal-media"></div>
+      <div class="modal-body">
+        <h2 id="modal-title"></h2>
+        <p id="modal-meta"></p>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
