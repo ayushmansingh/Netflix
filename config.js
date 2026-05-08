@@ -14,7 +14,7 @@ window.NETFLIX_CONFIG = {
   // The first one with `locked: true` is the one PIN-gated.
   profiles: [
     {
-      name: "Your Partner's Name",
+      name: "Dhwani",
       avatar: "assets/ig-7.jpg",
       locked: true,
     },
