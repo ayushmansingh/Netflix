@@ -1,0 +1,9 @@
+.DS_Store
+
+# HEIC files don't render in Chrome/Firefox; Live-Photo MP4s are kept instead
+assets/*.HEIC
+assets/*.heic
+
+# Oversized files (GitHub 100MB limit) — keep on disk, not in repo
+assets/IMG_0587.MOV
+assets/IMG_7306.MOV

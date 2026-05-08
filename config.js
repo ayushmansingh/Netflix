@@ -8,18 +8,18 @@
 
 window.NETFLIX_CONFIG = {
   // PIN required to enter the partner profile (4 digits)
-  pin: "1234",
+  pin: "2829",
 
   // Profiles shown on the "Who's watching?" screen.
   // The first one with `locked: true` is the one PIN-gated.
   profiles: [
     {
-      name: "Your Partner's Name",  // e.g. "Sam"
-      avatar: "assets/avatar.jpg",
+      name: "Your Partner's Name",
+      avatar: "assets/ig-7.jpg",
       locked: true,
     },
-    { name: "Kids",   avatar: "assets/profile-kids.png",  locked: false },
-    { name: "Guest",  avatar: "assets/profile-guest.png", locked: false },
+    { name: "Kids",   avatar: "assets/placeholder.svg", locked: false },
+    { name: "Guest",  avatar: "assets/placeholder.svg", locked: false },
   ],
 
   // The big featured banner at the top of the home page.
@@ -28,7 +28,7 @@ window.NETFLIX_CONFIG = {
     meta: "★ 100% Match  •  2024  •  Limited Series  •  Romance, Comedy",
     description:
       "An ordinary day turned into the best story ever told. Watch as two people meet, fall in love, and embarrass themselves at karaoke. A heart-warming, occasionally chaotic, always honest love story.",
-    backgroundImage: "assets/hero.jpg",
+    backgroundImage: "assets/20260419_122628.jpg",
   },
 
   // Each row is a category. `items` are the "shows" in that category.
@@ -37,50 +37,51 @@ window.NETFLIX_CONFIG = {
     {
       title: "Continue Watching for You",
       items: [
-        { title: "Our First Date",   image: "assets/memory-1.jpg", meta: "1h 47m  •  ★ 99% Match", description: "The night you spilled wine on me and I knew." },
-        { title: "Moving In",        image: "assets/memory-2.jpg", meta: "Season 1  •  ★ 100% Match", description: "Every cardboard box was a love letter." },
-        { title: "That One Trip",    image: "assets/memory-3.jpg", meta: "Limited Series  •  ★ 98% Match", description: "We got lost on purpose." },
-        { title: "Sunday Pancakes",  image: "assets/memory-4.jpg", meta: "Daily  •  ★ 100% Match", description: "Our slowest, sweetest tradition." },
+        { image: "assets/ig-1.jpg" },
+        { image: "assets/ig-2.jpg" },
+        { image: "assets/IMG_0539.MP4" },
+        { image: "assets/ig-4.jpg" },
+        { image: "assets/IMG_5994.MP4" },
       ],
     },
     {
       title: "Top 10 in Our House This Week",
       top10: true,
       items: [
-        { title: "The Couch Arc",        image: "assets/top-1.jpg" },
-        { title: "Saturday Errands",     image: "assets/top-2.jpg" },
-        { title: "Cooking Disasters",    image: "assets/top-3.jpg" },
-        { title: "Dog Park Chronicles",  image: "assets/top-4.jpg" },
-        { title: "Karaoke Night",        image: "assets/top-5.jpg" },
-        { title: "The Long Drive",       image: "assets/top-6.jpg" },
+        { image: "assets/ig-5.jpg" },
+        { image: "assets/IMG_0583.MP4" },
+        { image: "assets/ig-6.jpg" },
+        { image: "assets/IMG_6016.MP4" },
+        { image: "assets/ig-8.jpg" },
+        { image: "assets/IMG_7031.MP4" },
       ],
     },
     {
       title: "Because You Loved Me",
       items: [
-        { title: "Coffee in Bed",      image: "assets/love-1.jpg", meta: "★ 100% Match", description: "A slow-burn morning ritual." },
-        { title: "3am Talks",          image: "assets/love-2.jpg", meta: "★ 99% Match",  description: "When the world is quiet enough to be honest." },
-        { title: "Holding Your Hand",  image: "assets/love-3.jpg", meta: "★ 100% Match", description: "The original blockbuster." },
-        { title: "Your Laugh",         image: "assets/love-4.jpg", meta: "★ 100% Match", description: "Critics agree: unmatched." },
-        { title: "Goodnight",          image: "assets/love-5.jpg", meta: "★ 100% Match", description: "Every. Single. Episode." },
+        { image: "assets/ig-9.jpg" },
+        { image: "assets/IMG_5739.MOV" },
+        { image: "assets/ig-10.jpg" },
+        { image: "assets/IMG_7677.MP4" },
+        { image: "assets/ig-12.jpg" },
       ],
     },
     {
       title: "Trending Now",
       items: [
-        { title: "Date Night",         image: "assets/trend-1.jpg" },
-        { title: "Lazy Sundays",       image: "assets/trend-2.jpg" },
-        { title: "Inside Jokes",       image: "assets/trend-3.jpg" },
-        { title: "Dancing in the Kitchen", image: "assets/trend-4.jpg" },
-        { title: "The Anniversary Special",   image: "assets/trend-5.jpg" },
+        { image: "assets/IMG_7702.MOV" },
+        { image: "assets/ig-13.jpg" },
+        { image: "assets/IMG_7386.MP4" },
+        { image: "assets/IMG_20190313_164233027.jpg" },
+        { image: "assets/IMG_7081.MP4" },
       ],
     },
     {
       title: "My List",
       items: [
-        { title: "Forever",                image: "assets/list-1.jpg" },
-        { title: "Tomorrow",               image: "assets/list-2.jpg" },
-        { title: "Every Day After This",   image: "assets/list-3.jpg" },
+        { image: "assets/IMG_1206.JPG" },
+        { image: "assets/IMG_20190428_182846936.jpg" },
+        { image: "assets/WhatsApp Image 2025-11-10 at 22.02.44.jpeg" },
       ],
     },
   ],
